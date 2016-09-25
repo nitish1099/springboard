@@ -1,0 +1,324 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html,body {
+  padding: 0;
+  font-family: 'Raleway', sans-serif !important;
+  height: 100%;
+}
+.main-container{
+  background-color:#4ECDC4;
+  background-image:url('../images/school.png');
+  background-blend-mode:multiply; 
+  padding: 15px;
+  min-height: 100%;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+/* Custom page header */
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+
+  .path-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .path-list > li {
+    padding: 0px;
+    margin: 0px 0px 20px;
+  }
+ 
+  .path-list > li > .path-image {
+    width: 300px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .path-list > li > .info {
+    padding-top: 5px;
+    text-align: center;
+  }
+  .path-list > li > .info > .title {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .path-list > li > .info > .desc {
+    font-weight: normal;
+    margin: 0px;
+    font-size: 15px;
+    color: #999;
+  }
+
+  .path-list > li > .info > .tags {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .path-list > li > .info .btn{
+    margin-right: 10px;
+    background: #F9690E;
+    border:none;
+    margin-top: 20px;
+  }
+
+ .path-list > li > .info .btn img{
+    width: 18px;
+    margin-right: 5px;
+ }
+  .path-list > li > .info > ul,
+  .path-list > li > .votes > ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .path-list > li > .votes > ul {
+    margin: 0px;
+    height: 260px;
+  }
+  .path-list > li > .info > ul > li,
+  .path-list > li > .votes > ul > li {
+    display: table-cell;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
+    font-weight: 300;
+    padding: 3px 0px;
+  }
+    .path-list > li > .info > ul > li > a {
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+  } 
+  .path-list > li > .votes > ul > li {    
+        padding: 0px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+  .path-list > li > .votes > ul > li > a {
+        padding: 3px 0px;
+  } 
+  .path-list > li > .votes > ul > li:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
+  }
+
+  
+  .path-search{
+    margin-bottom: 20px;
+  }
+  .path-search span{
+    background: none;
+    border-radius:0px;
+    border: none;
+    box-shadow: none;
+    vertical-align: top; 
+  }
+  .path-search span i{
+    color:#fff;
+    font-size: 20px; 
+  }
+  .path-search input{
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 30px;  
+    color:#fff;
+    border-radius: 0px;
+  }
+
+  .form-control:focus{
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+
+  ::-webkit-input-placeholder {
+     color: #fff !important;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: #!important;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: #!important;  
+  }
+
+  :-ms-input-placeholder {  
+     color: #!important;  
+  }
+
+
+  .sort-container{
+    background: #fff;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .sort-container span{
+    text-align: center;
+    font-size:20px;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+
+  .count-container{
+    border-top: 1px solid #eee;
+    padding: 10px 0px;
+    font-size: 18px;
+  }
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+
+
+
+     .path-list > li {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 260px;
+      padding: 0px;
+    }
+    .path-list > li > img  {
+      display: inline-block;
+    }
+    .path-list > li > img {
+      width: 300px;
+      height: 200px;
+      float: left;
+    }
+    .path-list > li > .info {
+      overflow: hidden;
+    }
+    .path-list > li > img {
+      width: 300px;
+      height: 200px;
+      padding: 0px;
+      margin: 0px;
+    }
+    .path-list > li > .info {
+      position: relative;
+      height: 260px;
+      text-align: left;
+      padding-right: 40px;
+    } 
+    .path-list > li > .info > .title, 
+    .path-list > li > .info > .desc,
+    .path-list > li > .info > .tags  {
+      padding: 0px 10px;
+    }
+    .path-list > li > .info > ul {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+    .path-list > li > .votes {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      display: block;
+      width: 40px;
+    }
+    .path-list > li > .votes > ul {
+        border-left: 1px solid rgb(230, 230, 230);
+    }
+    .path-list > li > .votes > ul > li > a {
+      display: block;
+      width: 40px;
+      padding: 10px 0px 9px;
+    }
+    .path-list > li > .votes > ul > li img{
+      display: block;
+    }
+     .path-list > li > .info .btn{
+      float: right;
+   }
+  }
+
+  @media screen and (max-width: 768px){
+    .path-list > li{
+      padding: 10px;
+    }
+    .path-list > li > .path-image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    .path-list > li > .votes > ul{
+      height: auto;
+      border-top: 1px solid rgb(230, 230, 230);
+      margin-top: 20px;    }
+    .path-list > li > .votes > ul > li{
+      display: inline-flex;
+      width: 50%;
+      height: auto;
+    }
+    .path-list > li > .votes > ul > li img{
+      display: inline-block;
+      margin: 10px;
+    }
+    .sort-container{
+      margin-bottom: 10px;
+    }
+
+  }

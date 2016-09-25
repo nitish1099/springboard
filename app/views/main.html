@@ -1,0 +1,60 @@
+
+<div class="col-xs-12">
+  <div class="path-container row">
+    <div class="col-xs-12 col-md-3">
+      <div class="sort-container">
+        <span><img src="images/vertical.png" width="24px"> SORT BY</span>
+        <div class="radio">
+          <label><input type="radio" name="optradio" ng-model="sort" ng-change="order(0)" value="Upvotes">Votes (Up)</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio" ng-model="sort"  ng-change="order(1)" value="Downvotes">Votes (Down)</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio" ng-model="sort"  ng-change="order(2)" value="Learners">Learners</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio"  ng-model="sort" ng-change="order(3)" value="Hours">Duration</label>
+        </div>
+        <div class="count-container" ng-show="sort">
+          Total {{sort}} {{result_count}}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 col-xs-12 ">
+      <div class="input-group path-search">
+        <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search"></i></span>
+        <autocomplete attr-placeholder="Search (by tag)" attr-input-class="form-control" aria-describedby="basic-addon2" ng-model="searchTag" data="tags"></autocomplete>
+      </div>
+      <ul class="path-list list-group">
+                <li ng-repeat="path in paths | filter:{tags:searchTag}" class="list-group-item">
+                  <div class="path-image" style="background-image:url({{path.image}})" />
+                  <div class="info">
+                    <h2 class="title">{{path.name}}</h2>
+                    <p class="tags"><img src="images/shopping.png" width="16px"></i>{{path.tags}}</p>
+                    <p class="desc">{{path.description}}</p>
+                    <a href="{{path.sign_up}}" target="_blank" class="btn btn-primary"><img src="images/link.png">View Curriculam</a>
+                    <ul>
+                        <li style="width:50%;">{{path.learner}} learners <img src="images/people.png" width="20px"></img></li>
+                        <li style="width:50%;">{{path.hours}}+ Hours <img src="images/clock.png" width="20px"></span></li>
+                    </ul>
+                  </div>
+                  <div class="votes">
+                    <ul>
+                      <li class="upvote" ng-click="incVote(path.id, $index)">
+                        <div>
+                          <img src="images/like.png" width="20px">{{path.upvote}}
+                        </div>
+                      </li>
+                      <li class="downvote" ng-click="decVote(path.id, $index)">
+                        <div>
+                          {{path.downvote}}<img src="images/dislike.png" width="20px"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+    </div>
+  </div>
+</div>
